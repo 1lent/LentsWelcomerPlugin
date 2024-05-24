@@ -1,0 +1,5 @@
+name: welcomer
+version: '${project.version}'
+main: com.brodi.welcomer.Main
+api-version: '1.20'
+

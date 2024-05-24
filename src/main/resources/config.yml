@@ -1,0 +1,6 @@
+welcome: "Welcome!"
+#Main message being sent
+welcome-subtitle: "To my server!"
+# Subtitle for what is being sent below main 'WELCOME'
+color: ""
+### work in progress###
