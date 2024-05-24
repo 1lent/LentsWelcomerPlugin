@@ -1,62 +1,44 @@
-
 package com.brodi.welcomer;
 
-
+import com.brodi.welcomer.utils.ColorizeText;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static org.bukkit.ChatColor.COLOR_CHAR;
-
 public final class Main extends JavaPlugin implements Listener {
-    public Main() {
-    }
 
+    private ColorizeText cc;
 
-    public String translateHexColorCodes(String startTag, String endTag, String message)
-    {
-        final Pattern hexPattern = Pattern.compile(startTag + "([A-Fa-f0-9]{6})" + endTag);
-        Matcher matcher = hexPattern.matcher(message);
-        StringBuffer buffer = new StringBuffer(message.length() + 4 * 8);
-        while (matcher.find())
-        {
-            String group = matcher.group(1);
-            matcher.appendReplacement(buffer, COLOR_CHAR + "x"
-                    + COLOR_CHAR + group.charAt(0) + COLOR_CHAR + group.charAt(1)
-                    + COLOR_CHAR + group.charAt(2) + COLOR_CHAR + group.charAt(3)
-                    + COLOR_CHAR + group.charAt(4) + COLOR_CHAR + group.charAt(5)
-            );
-        }
-        return matcher.appendTail(buffer).toString();
-    }
-
-
+    public Main() {}
 
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
         getConfig().options().copyDefaults();
         saveDefaultConfig();
-        String color = getConfig().getString("color");
-        translateHexColorCodes("#","", color);
-        String hex = translateHexColorCodes("#","", color);
     }
-
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        String color = getConfig().getString("color");
-        translateHexColorCodes("#","", color);
-        String hex = translateHexColorCodes("#","", color);
-        String title = getConfig().getString("welcome");
-        String subtitle = getConfig().getString("welcome-subtitle");
-        event.getPlayer().sendTitle(hex + title, hex + subtitle, 20, 200, 20);
+        Player p = event.getPlayer();
+        String title = getConfig().getString("welcomer.title");
+        String subtitle = getConfig().getString("welcomer.subtitle");
+        int fadeIn = getConfig().getInt("welcomer.title-fade-in", 10);
+        int stay = getConfig().getInt("welcomer.title-stay", 80);
+        int fadeOut = getConfig().getInt("welcomer.title-fade-out", 10);
+        String soundName = getConfig().getString("welcomer.sound", "ENTITY_PLAYER_LEVELUP");
 
+        title = cc.formatColors(title);
+        subtitle = cc.formatColors(subtitle);
+        p.sendTitle(title, subtitle, fadeIn, stay, fadeOut);
+
+        if (getConfig().getBoolean("welcomer.join-sound", true)) {
+            Sound sound = Sound.valueOf(soundName);
+            p.playSound(p.getLocation(), sound, 1, 1);
+        }
     }
 }
