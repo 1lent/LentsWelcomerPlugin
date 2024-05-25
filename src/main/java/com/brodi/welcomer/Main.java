@@ -54,9 +54,10 @@ public final class Main extends JavaPlugin implements Listener {
         String color = getConfig().getString("color");
         translateHexColorCodes("#","", color);
         String hex = translateHexColorCodes("#","", color);
+        int time = getConfig().getInt("time");
         String title = getConfig().getString("welcome");
         String subtitle = getConfig().getString("welcome-subtitle");
-        event.getPlayer().sendTitle(hex + title, hex + subtitle, 20, 200, 20);
+        event.getPlayer().sendTitle(hex + title, hex + subtitle, 20, time, 20);
 
     }
 }
