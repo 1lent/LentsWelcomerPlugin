@@ -4,3 +4,5 @@ welcome-subtitle: "To my server!"
 # Subtitle for what is being sent below main 'WELCOME'
 color: "#ff00ff"
 #Hex code for welcome msg and welcome subtitle!
+time: "200"
+# Time text stays on screen, 200 default
