@@ -11,4 +11,5 @@ Easily configable file that allows for the owner of this plugin to change what s
 
 
 # PATCH 1
-CNFIG FOR COLOR TO THE MSGS ADDED! 24/5/2024
+- CONFIG FOR COLOR TO THE MSGS ADDED! 24/5/2024
+- ADDED CONFIG TO CHANGE TIME DISPLAYED ON SCREEN
