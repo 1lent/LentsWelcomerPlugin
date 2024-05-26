@@ -3,7 +3,6 @@
 Easily configable file that allows for the owner of this plugin to change what shows up on join of players.
 
 Examples in IRISMC:
-https://i.feathermc.com/Uc3DAErW.png
 <a href="https://ibb.co/2YbM22c"> </a>
 <a href="https://ibb.co/DDk9pZm"> </a>
 
