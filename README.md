@@ -1,9 +1,11 @@
-# Lents welcomer plugin
+![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/d5141596-3eac-4951-8628-fb9a21a32b53)# Lents welcomer plugin
 
 Easily configable file that allows for the owner of this plugin to change what shows up on join of players.
 
 Examples in IRISMC:
-<a href="https://imgur.com/a/R6XXDh3"> </a>](https://imgur.com/a/R6XXDh3)
+![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/6926422b-2ade-473b-9a5a-428b6c28758a)
+![Uploading image.png…]()
+
 
 
 
