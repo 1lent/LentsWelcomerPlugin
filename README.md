@@ -4,7 +4,7 @@ Easily configable file that allows for the owner of this plugin to change what s
 
 Examples in IRISMC:
 <a href="https://ibb.co/2YbM22c"> </a>
-<a href="https://ibb.co/DDk9pZm"> </a>
+<a href="https://imgur.com/a/R6XXDh3"> </a>
 
 
 
