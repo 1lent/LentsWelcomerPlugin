@@ -17,4 +17,3 @@ Easily configable file that allows for the owner of this plugin to change what s
 Examples in IRISMC:
 ![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/6926422b-2ade-473b-9a5a-428b6c28758a)
 ![Uploading image.png…]()
-![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/d5141596-3eac-4951-8628-fb9a21a32b53).
