@@ -1,4 +1,4 @@
-![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/20d3e624-7d35-4f21-86ad-5b900e4964fc)# Lents Welcomer Plugin
+# Lents Welcomer Plugin
 
 Easily configable file that allows for the owner of this plugin to change what shows up on join of players.
 
