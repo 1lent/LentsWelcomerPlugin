@@ -14,6 +14,6 @@ Easily configurable file that allows for the owner of this plugin to change what
 # Release 1.0.1 released!
 - ADDED CONFIG TO CHANGE TIME DISPLAYED ON SCREEN
 
-Example in IRISMC:
+Example in IRISMC!!
 ![image](https://github.com/1lent/LentsWelcomerPlugin/assets/128602359/7830cd32-6dfe-4710-87ae-15b207936a51)
 
